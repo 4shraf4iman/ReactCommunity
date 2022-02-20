@@ -31,7 +31,7 @@ let value = event.target.value.toLowerCase();
 let result = [];
 console.log(value);
 result = allData.filter((repos) => {
-return repos.name.search(value) != -1;
+return repos.name.search(value) !== -1;
 });
 setFilteredData(result);
 }
